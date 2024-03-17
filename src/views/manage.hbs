@@ -1,0 +1,55 @@
+
+<h1>--The Reservation List I'm Managing--</h1> 
+
+<table> 
+    <tr>
+        <td>SaleID</td>
+        <td>MyAdminID</td>
+        <td>ReserveDate</td>
+        <td>CustomerID</td>
+        <td>VehicleID</td>
+    </tr>
+    {{#each salelist}} 
+    <tr>
+        <td>{{said}}</td> 
+        <td>{{manageid}}</td>
+        <td>{{reservedate}}</td>
+        <td>{{customerid}}</td>
+        <td>{{vid}}</td>
+    </tr>
+    {{/each}}
+</table>
+</br> </br>
+<h2><a href="http://localhost:7000/insert/adminvhc"> 차량 추가하기</a></h2>
+<h2><a href="http://localhost:7000/update/vhc"> 차량 수정하기</a></h2>
+<h2><a href="http://localhost:7000/delete/admin"> 차량 삭제하기</a></h2>
+<h2><a href="http://localhost:7000/update/sale"> 예약 수정하기</a></h2>
+<h2><a href="http://localhost:7000/delete/complete"> 판매 완료 처리 하기</a></h2>
+<h2><a href="http://localhost:7000//delete/fail"> 판매 실패 처리 하기</a></h2>
+<h1>--The Vehicle List I'm Managing--</h1> 
+<table>
+    <tr>
+        <td>VehicleID</td>
+        <td>Model_Name</td>
+        <td>Price</td>
+        <td>Type</td>
+        <td>Enginesize</td>
+        <td>Seat</td>
+        <td>Tone</td>
+        <td>Reservation</td>
+        <td>MyAdmin_id</td>
+    </tr>
+    {{#each vehiclelist}} 
+    <tr>
+        <td>{{Vin}}</td> 
+        <td>{{Model}}</td>
+        <td>{{Price}}</td>
+        <td>{{Type}}</td>
+        <td>{{Enginesize}}</td>
+        <td>{{Seat}}</td>
+        <td>{{Tone}}</td>
+        <td>{{Reservation}}</td>
+        <td>{{salesperson_id}}</td>
+    </tr>
+    {{/each}}
+</table>

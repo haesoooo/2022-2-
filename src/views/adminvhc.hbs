@@ -1,0 +1,53 @@
+
+<h1>--Insert Vehicle--</h1>
+<form name="adminvhc" method="post" action='/insert/adminvhc'>
+
+    <div>
+        <label for="Model">Model Name</label>
+        <input id="Model" name="Model" type="text" required placeholder="Model">
+    </div>
+    <div>
+        <label for="Price">Price</label>
+        <input id="Price" name="Price" type="text" required placeholder="Price">
+    </div>
+    <div>
+        <input type="radio" id="Car" name="Type" value="Car">
+        <label for="Car">Car</label><br>
+        <input type="radio" id="SUV" name="Type" value="SUV">
+        <label for="SUV">SUV</label><br>
+        <input type="radio" id="Truck" name="Type" value="Truck">
+        <label for="Truck">Truck</label><br>        
+        
+    </div>
+    <div>
+        <label for="Enginesize">Enginesize</label>
+        <input id="Enginesize" name="Enginesize" type="text">
+       
+    </div>
+    <div>
+        <label for="Seat">Seat</label>
+        <input id="Seat" name="Seat" type="text" >
+    </div>
+    <div>
+        <label for="Tone">Tone</label>
+        <input id="Tone" name="Tone" type="text" >
+    </div>
+
+    <div>
+        <label for="Reservation">Reservation : YES or NO</label>
+        <input id="Reservation" name="Reservation" type="text" required placeholder="Reservation">
+    </div>      
+    <div>
+        <label for="salesperson_id">Your Admin ID</label>
+        <input id="salesperson_id" name="salesperson_id" type="text" required placeholder="salesperson_id">
+    </div>                
+    <div>
+        <input type="submit" value="차량 추가">
+    </div>
+
+
+</form>
+</br> </br>
+
+<h2><a href="http://localhost:7000/manage"> Go to My Managing List </a></h2>
+

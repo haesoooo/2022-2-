@@ -1,0 +1,53 @@
+
+<h1>--My Reservation List-</h1> 
+
+<table> 
+    <tr>
+        <td>SaleID</td>
+        <td>ManagerID</td>
+        <td>ReserveDate</td>
+        <td>MyID</td>
+        <td>VehicleID</td>
+    </tr>
+    {{#each mysale}} 
+    <tr>
+        <td>{{said}}</td> 
+        <td>{{manageid}}</td>
+        <td>{{reservedate}}</td>
+        <td>{{customerid}}</td>
+        <td>{{vid}}</td>
+    </tr>
+    {{/each}}
+</table>
+</br> </br>
+<h2><a href="http://localhost:7000/insert/shopping"> 예약 추가하기 </a></h2>
+<h2><a href="http://localhost:7000/delete/usersale"> 예약 취소하기 </a></h2>
+
+</br> </br>
+<h1>--Possible Vehicle List--</h1>
+<table>
+    <tr>
+        <td>VehicleID</td>
+        <td>Model_Name</td>
+        <td>Price</td>
+        <td>Type</td>
+        <td>Enginesize</td>
+        <td>Seat</td>
+        <td>Tone</td>
+        <td>Reservation</td>
+        <td>MyAdmin_id</td>
+    </tr>
+    {{#each vehicle}} 
+    <tr>
+        <td>{{Vin}}</td> 
+        <td>{{Model}}</td>
+        <td>{{Price}}</td>
+        <td>{{Type}}</td>
+        <td>{{Enginesize}}</td>
+        <td>{{Seat}}</td>
+        <td>{{Tone}}</td>
+        <td>{{Reservation}}</td>
+        <td>{{salesperson_id}}</td>
+    </tr>
+    {{/each}}
+</table>

@@ -1,0 +1,32 @@
+
+<h1>--차량 정보 수정--</h1>
+<form name="updatevhc" method="post" action='/update/vhc'>
+
+
+    <div>
+        <label for="Vin">VehicleID</label>
+        <input id="Vin" name="Vin" type="text" required placeholder="수정할 차량 ID">
+    </div>
+    
+    <div>
+        <label for="Price">Price</label>
+        <input id="Price" name="Price" type="text" required placeholder="price">
+    </div>
+    <div>
+        <label for="Model">Model</label>
+        <input id="Model" name="Model" type="text" required placeholder="Model">
+    </div>
+    <div>
+        <label for="Reservation">Reservation 여부: YES or NO</label>
+        <input id="Reservation" name="Reservation" type="text" required placeholder="Reservation">
+    </div>        
+    <div>
+        <input type="submit" value="정보 수정">
+    </div>
+
+
+</form>
+</br> </br>
+
+<h2><a href="http://localhost:7000/manage"> Go to My Managing List </a></h2>
+
